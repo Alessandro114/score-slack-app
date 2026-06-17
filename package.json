@@ -1,0 +1,16 @@
+{
+  "name": "score-slack-app",
+  "version": "1.0.0",
+  "description": "Slack app to search 250M+ company records from Score API",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": ["slack", "company", "business-data", "score-api"],
+  "author": "SCALA <ale@get-scala.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Alessandro114/score-slack-app"
+  }
+}

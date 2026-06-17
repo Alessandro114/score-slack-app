@@ -1,0 +1,31 @@
+{
+  "display_information": {
+    "name": "Company Score Lookup",
+    "description": "Search 250M+ company records. Revenue, employees, credit score.",
+    "background_color": "#2563EB",
+    "long_description": "Look up any company from Slack. Search by name, VAT number, or keyword across 250+ million company records spanning 50+ countries.\n\nData includes: Revenue, employees, credit score, NACE codes, legal form, VAT numbers, founding date, contacts.\n\nFree to use. No API key required for basic lookups."
+  },
+  "features": {
+    "bot_user": {
+      "display_name": "Company Score",
+      "always_online": false
+    },
+    "slash_commands": [
+      {
+        "command": "/company",
+        "url": "https://score.get-scala.com/api/slack/command",
+        "description": "Look up company data",
+        "usage_hint": "[company name or VAT number]",
+        "should_escape": false
+      }
+    ]
+  },
+  "oauth_config": {
+    "scopes": {
+      "bot": [
+        "commands",
+        "chat:write"
+      ]
+    }
+  }
+}
